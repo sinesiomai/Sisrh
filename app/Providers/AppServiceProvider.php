@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+
     /**
      * Register any application services.
      *
@@ -31,4 +32,5 @@ class AppServiceProvider extends ServiceProvider
             echo 'Exceção capturada no boot: ', $e->getMessage(), "\n"; 
         }
     }
+ 
 }
