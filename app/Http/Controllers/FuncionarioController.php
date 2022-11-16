@@ -43,7 +43,7 @@ class FuncionarioController extends Controller
         if(!empty($input['foto'] && $input['foto']->isValid() ))
         {
             $nomeArquivo = $input['foto']->hashName(); // Obtem a hash do nome do arquivo
-            $input['foto']->store('public/images/funcionarios'); // Faz upload da foto em uma pasta
+            $input['foto']->store('/storage/funcionarios/'); // Faz upload da foto em uma pasta
             $input['foto'] = $nomeArquivo; // Guardr o nome do arquivo 
         }else{
             $input['foto'] = null;

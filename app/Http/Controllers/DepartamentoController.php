@@ -21,7 +21,7 @@ class DepartamentoController extends Controller
 
     public function store(Request $request)
     {
-        $input = $request -> toArray();
+        $input = $request->toArray();
     
         Departamento::Create($input);
 

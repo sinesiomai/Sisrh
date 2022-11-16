@@ -21,7 +21,7 @@ class CargoController extends Controller
 
     public function store(Request $request)
     {
-        $input = $request -> toArray();
+        $input = $request->toArray();
     
         Cargo::Create($input);
         

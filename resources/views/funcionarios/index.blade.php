@@ -32,12 +32,12 @@
                 @foreach ($funcionarios as $funcionario)
                     <tr class="text-center align-middle">
                         <td class="align-middle">{{ $funcionario->id }}</>
-                        <td class="align-middle"><img src="/images/funcionarios/{{ $funcionario->foto }}"alt="{{ $funcionario->nome }}" width="100"></td>
+                        <td class="align-middle"><img src="/storage/funcionarios/{{ $funcionario->foto }}"alt="{{ $funcionario->nome }}" width="100"></td>
                         <td class="align-middle">{{ $funcionario->nome }}</>
                         <td class="align-middle">{{ $funcionario->cargo->descricao }}</>
                         <td class="align-middle">{{ $funcionario->departamento->nome }}</>
                         <td class="align-middle"><button type="button" class="btn btn-primary m-2"><i class="bi bi-pen"></i>
-                            </button><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></i></td>
+                        </button><button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button></i></td>
                     </tr>
                 @endforeach
             </tbody>

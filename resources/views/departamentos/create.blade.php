@@ -10,7 +10,7 @@
         <div class="mt-5">
             <div>
                 <label for="nome" class="form-label">Descrição</label>
-                <input type="text" name="descricao" class="form-control form-control-lg bg-light" value="" required>
+                <input type="text" name="nome" class="form-control form-control-lg bg-light" value="" required>
             </div>
             <div class="mt-4">
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
